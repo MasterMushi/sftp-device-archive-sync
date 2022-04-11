@@ -5,10 +5,11 @@ description = "Simple directories synchronizer for sftp connection"
 authors = ["a.ilichev <a.iljichev@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.10,<3.11"
 configparser = "^5.2.0"
 paramiko = "^2.10.3"
 pysftp = "^0.2.9"
+pyinstaller = "^4.10"
 
 [tool.poetry.dev-dependencies]
 

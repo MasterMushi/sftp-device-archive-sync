@@ -40,10 +40,16 @@ if __name__ == '__main__':
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
-    cwd = os.path.dirname(os.path.realpath(__file__))
+    cwd = os.getcwd()
     dev_ini_path = os.path.join(cwd, 'devices.ini')
     config = configparser.ConfigParser()
     config.read(dev_ini_path)
+
+    logger.info(
+        "\n"
+        "=======================================\n"
+        "SFTP-DIR-SYNC started\n"
+        f"DEVICE.INI: {dev_ini_path}\n")
 
     dev_count = int(config['BASE']['DEVICE_COUNT'])
 

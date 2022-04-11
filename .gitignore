@@ -1,1 +1,10 @@
+# python cahche
+project/__pycache__
+
+# log files
 *.log
+
+# pyinstaller files
+*.spec
+dist
+build
