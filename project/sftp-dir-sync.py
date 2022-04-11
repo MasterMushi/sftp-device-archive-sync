@@ -49,7 +49,7 @@ if __name__ == '__main__':
         "\n"
         "=======================================\n"
         "SFTP-DIR-SYNC started\n"
-        f"DEVICE.INI: {dev_ini_path}\n")
+        f"DEVICES.INI: {dev_ini_path}\n")
 
     dev_count = int(config['BASE']['DEVICE_COUNT'])
 

@@ -5,6 +5,5 @@ project/__pycache__
 *.log
 
 # pyinstaller files
-*.spec
 dist
 build
